@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.block {
+    width: 100px;
+    min-height: 200px;
+    border: 1px solid black;
+}
+.block-2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.block-child-2 {
+    width: 50%;
+    display: flex;
+}
+
+.block-1.active + .block-2 > .block-child-2 >.childhood-1 {
+    background-color: green !important;
+}
